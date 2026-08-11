@@ -1,4 +1,4 @@
-import Header from '../components/Header'
+import Header2 from '../components/Header2'
 
 import apartment from '../assets/apartment.jpg'
 import logo from '../assets/logoOrange.png'
@@ -7,14 +7,14 @@ import { apartmentData } from '../Data'
 function Contact() {
   return (
     <section style={{ width: '100%', margin: 0 }}>
-      <Header title='ติดต่อเรา' image={apartment}/>
+      <Header2 category="CONTACT US" title={apartmentData.nameTH} description="อะพาร์ตเมนต์"/>
       
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 20px', textAlign: 'center' }}>
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '36px 0' }}>
+        {/* <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '36px 0' }}>
           <img src={logo} alt={apartmentData.nameTH} style={{ width: '55px', height: '55px', marginBottom: '12px' }} />
           <h2 style={{ margin: '0', fontSize: '24px', fontWeight: '600', color: '#000000', fontFamily: 'Prompt' }}>{apartmentData.nameTH}</h2>
           <p style={{ margin: 0, fontSize: '15px', color: '#222222', fontWeight: '400', fontFamily: 'Prompt' }}>อะพาร์ตเมนต์</p>
-        </div>
+        </div> */}
 
         <div style={{
           display: 'grid',

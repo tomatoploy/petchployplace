@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import Announcement from './pages/Announcement'
 import Rooms from './pages/Rooms'
 import More from './pages/More'
+import Faq from './pages/Faq'
 import Contact from './pages/Contact'
 
 function App() {
@@ -23,6 +24,9 @@ function App() {
     }
     if (currentPage === 'more'){
       return <More />
+    }
+    if (currentPage === 'faq'){
+      return <Faq />
     }
     if (currentPage === 'contact'){
       return <Contact />

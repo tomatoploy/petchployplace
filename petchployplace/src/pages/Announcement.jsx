@@ -2,21 +2,62 @@ import { useState } from "react"
 
 import Header2 from "../components/Header2"
 import AnnouncementCard from "../components/AnnouncementCard"
+
 import defaultImg from "../assets/apartment2.jpg"
+import announce_parking from "../assets/announce_parking.png"
+import announce_line from "../assets/announce_line.png"
+import announce_service from "../assets/announce_service.png"
+import announce_warning from "../assets/announce_warning.png"
 
 const announcements = [
   {
-    image: defaultImg,
-    date: "12 กรกฎาคม 2026",
-    title: "เปิดจองห้องพักล่วงหน้าสำหรับเทอมปีการศึกษาใหม่ พร้อมโปรโมชั่นพิเศษ!",
-    excerpt: "ต้อนรับเปิดเทอมใหม่กับสเปซที่ลงตัว! เพชร พลอย เพลส เปิดให้จองห้องพักล่วงหน้าแล้ววันนี้ ทั้งห้องแอร์มาตรฐานและห้องหัวมุมวิวสวย รับสิทธิ์ฟรีอินเทอร์เน็ตความเร็วสูง 3 เดือนแรก จองด่วนจำนวนจำกัด หอพักของเราตั้งอยู่ใกล้สถานศึกษา เดินทางสะดวก ปลอดภัยด้วยระบบคีย์การ์ดตลอด 24 ชั่วโมง สนใจติดต่อจองล็อกห้องพักก่อนใครได้ที่สำนักงานหรือ LINE Official ของโครงการ",
-    isImportant: true
+    image: announce_line,
+    date: "17 กรกฎาคม 2569",
+    title: "ขั้นตอนการลงทะเบียนรับบิลออนไลน์ผ่าน LINE",
+    excerpt: `ขั้นตอนง่ายๆ ในการลงทะเบียนรับบิลออนไลน์ผ่าน LINE Official:
+
+1. กดเลือกเมนู "ลงทะเบียน Line" บนหน้าต่างแชท
+2. กรอกข้อมูล "หมายเลขห้องพัก" และ "เบอร์โทรศัพท์" จากนั้นกดปุ่ม "ยืนยันการลงทะเบียน"`,
+    isImportant: false
   },
   {
-    image: defaultImg,
-    date: "1 กรกฎาคม 2026",
-    title: "แจ้งกำหนดการบิ๊กคลีนนิ่ง (Big Cleaning) ประจำปีพื้นที่ส่วนกลาง",
-    excerpt: "เพื่อสุขอนามัยที่ดีของผู้พักอาศัย ทางโครงการจะดำเนินงานทำความสะอาดใหญ่และฉีดพ่นน้ำยาฆ่าเชื้อบริเวณโถงทางเดิน มุมสะดวกซัก และพื้นที่จอดรถ ในวันเสาร์ที่ 18 กรกฎาคมนี้ ตั้งแต่เวลา 09.00 - 15.00 น. ระหว่างการดำเนินงานอาจมีเสียงดังรบกวนชั่วคราว ทางโครงการขออภัยในความไม่สะดวกมา ณ ที่นี้",
+    image: announce_service,
+    date: "3 กรกฎาคม 2569",
+    title: "แจ้งอัตราการใช้บริการจากเจ้าหน้าที่",
+    excerpt: `สรุปอัตราค่าบริการกรณีขอความช่วยเหลือจากเจ้าหน้าที่อพาร์ตเมนต์เพชร พลอย เพลส ตามช่วงเวลาดังนี้:
+
+⏰ เวลา 08:00 - 18:00 น. : ค่าบริการ 50 บาท
+⏰ เวลา 18:00 - 22:00 น. : ค่าบริการ 200 บาท
+⏰ เวลา 22:00 - 08:00 น. : ค่าบริการ 300 บาท
+
+จึงเรียนมาเพื่อทราบ`,
+    isImportant: false
+  },
+  {
+    image: announce_parking,
+    date: "1 พฤษภาคม 2568",
+    title: "ประกาศกฎระเบียบการจอดรถจักรยานยนต์",
+    excerpt: `ไม่อนุญาตให้ผู้เช่าห้องพัก เพชร พลอย เพลส จอดรถจักรยานยนต์บริเวณหน้าร้านสะดวกซัก 24WASH เนื่องจากทางอาคารจำเป็นต้องสำรองพื้นที่จอดรถไว้สำหรับผู้มาใช้บริการร้านสะดวกซัก
+
+ขอความร่วมมือผู้เช่าทุกท่าน กรุณานำรถจักรยานยนต์ของท่านไปจอดในพื้นที่จอดรถที่ได้จัดเตรียมไว้ให้อย่างเป็นระเบียบ
+
+⚠️ หากพบผู้ฝ่าฝืน ทางโครงการมีความจำเป็นต้องดำเนินการล็อคล้อและปรับครั้งละ 300 บาท
+
+จึงเรียนมาเพื่อทราบและโปรดให้ความร่วมมือ`,
+    isImportant: false
+  },
+  {
+    image: announce_warning,
+    date: "15 เมษายน 2568",
+    title: "ประกาศเตือนภัย! ระวังมิจฉาชีพแอบอ้างและการก่อกวนในยามวิกาล",
+    excerpt: `อย่าหลงเชื่อมิจฉาชีพ! หลอกให้โอนเงินเป็นค่าสินค้าออนไลน์, บริการทางเพศ หรือบริการอื่น ๆ โปรดตรวจสอบข้อมูลให้ถี่ถ้วนก่อนทำการโอนเงิน มิฉะนั้นอาจสูญเสียทรัพย์สินได้
+
+ทาง เพชร พลอย เพลส ขอแจ้งให้ทราบว่า ทางเราไม่มีส่วนเกี่ยวข้องใด ๆ กับกลุ่มมิจฉาชีพดังกล่าวทั้งสิ้น 
+
+ขอความร่วมมือผู้เช่าและบุคคลภายนอก
+❌ ห้ามโทรศัพท์เรียกเจ้าหน้าที่, กดกริ่ง, หรือบุกรุกเข้ามาในอาคาร เพื่อตามหาบุคคลในยามวิกาลโดยเด็ดขาด
+
+โปรดรักษามารยาทและเกรงใจผู้พักอาศัยท่านอื่นในอาคาร ขอบคุณครับ`,
     isImportant: false
   }
 ]
@@ -25,15 +66,10 @@ function Announcements() {
   const [activePost, setActivePost] = useState(null)
 
   return (
-    <div style={{ width: '100%', minHeight: '100vh', paddingBottom: '80px', position: 'relative' }}>
+    <div style={{ width: '100%', minHeight: '100vh', paddingBottom: '40px', position: 'relative' }}>
       
-      <Header2 
-        category="NEWS & UPDATES" 
-        title="ประกาศและข่าวสาร" 
-        description="ติดตามข่าวสาร กฎระเบียบ และอัปเดตสิทธิพิเศษต่าง ๆ จากทางโครงการ" 
-      />
+      <Header2 category="NEWS & UPDATES" title="ประกาศและข่าวสาร" description="ติดตามข่าวสาร กฎระเบียบ และอัปเดตสิทธิพิเศษต่าง ๆ" />
 
-      {/* แผง Grid รายการประกาศ */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(310px, 1fr))', gap: '30px', maxWidth: '1100px', margin: '40px auto 0 auto', padding: '0 20px' }}>
         {announcements.map((post, index) => (
           <AnnouncementCard 
@@ -43,56 +79,28 @@ function Announcements() {
             title={post.title}
             excerpt={post.excerpt}
             isImportant={post.isImportant}
-            onClick={() => setActivePost(post)} // 🌟 คลิกแล้วเอาข้อมูลชิ้นนี้ไปใส่ใน State
+            onClick={() => setActivePost(post)}
           />
         ))}
       </div>
 
-      {/* 📥 3. โค้ดส่วนหน้าต่าง Pop-up (เงื่อนไข: จะเรนเดอร์เมื่อ activePost ไม่เป็น null เท่านั้น) */}
+      {/* Pop-up Responsive */}
       {activePost && (
         <div 
-          onClick={() => setActivePost(null)} // 🌟 คลิกพื้นที่สีดำรอบๆ เพื่อปิด Pop-up
-          style={{
-            position: 'fixed',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            backgroundColor: 'rgba(0, 0, 0, 0.5)', // พื้นหลังมืดโปร่งแสง
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            zIndex: 1000,
-            padding: '20px',
-            backdropFilter: 'blur(4px)' // ทำพื้นหลังเบลอหรูๆ
-          }}
+          onClick={() => setActivePost(null)}
+          style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000, padding: '16px', boxSizing: 'border-box', backdropFilter: 'blur(4px)' }}
         >
-          {/* กล่องสีขาวหน้าต่าง Pop-up */}
           <div 
-            onClick={(e) => e.stopPropagation()} // 🌟 ดักไว้ไม่ให้คลิกข้างในกล่องขาวแล้ว Pop-up ปิด
-            style={{
-              backgroundColor: '#ffffff',
-              width: '100%',
-              maxWidth: '600px',
-              borderRadius: '24px',
-              overflow: 'hidden',
-              boxShadow: '0 20px 40px rgba(0,0,0,0.15)',
-              animation: 'fadeIn 0.2s ease-out',
-              textAlign: 'left',
-              display: 'flex',
-              flexDirection: 'column'
-            }}
+            onClick={(e) => e.stopPropagation()}
+            className="announcement-modal-card"
           >
-            {/* รูปภาพใน Pop-up */}
-            <div style={{ width: '100%', height: '240px', backgroundColor: '#eaeaea' }}>
+            <div className="announcement-modal-image">
               <img src={activePost.image} alt={activePost.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </div>
 
-            {/* เนื้อหาด้านใน */}
-            <div style={{ padding: '30px', fontFamily: 'Prompt' }}>
+            <div className="announcement-modal-content">
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
                 <span style={{ fontSize: '13px', color: '#999999', fontWeight: '300' }}>📅 {activePost.date}</span>
-                {/* ❌ ปุ่มกดปิดมุมขวา */}
                 <button 
                   onClick={() => setActivePost(null)}
                   style={{ background: 'none', border: 'none', fontSize: '20px', color: '#999999', cursor: 'pointer', padding: '5px' }}
@@ -101,16 +109,14 @@ function Announcements() {
                 </button>
               </div>
 
-              <h2 style={{ fontSize: '20px', fontWeight: '600', color: '#222222', margin: '0 0 15px 0', lineHeight: '1.4' }}>
+              <h2 className="announcement-modal-title">
                 {activePost.title}
               </h2>
-
-              {/* ข้อความแบบเต็ม (ไม่อั้นบรรทัดแล้ว) */}
-              <p style={{ fontSize: '14.5px', color: '#555555', lineHeight: '1.7', fontWeight: '300', margin: '0 0 25px 0', whiteSpace: 'pre-line' }}>
+              
+              <p className="announcement-modal-excerpt">
                 {activePost.excerpt}
               </p>
 
-              {/* ปุ่มปิดด้านล่าง */}
               <button 
                 onClick={() => setActivePost(null)}
                 style={{
@@ -124,6 +130,7 @@ function Announcements() {
                   fontWeight: '600',
                   cursor: 'pointer',
                   transition: 'background-color 0.2s',
+                  marginTop: 'auto'
                 }}
                 onMouseEnter={(e) => e.target.style.backgroundColor = '#f75c1c'}
                 onMouseLeave={(e) => e.target.style.backgroundColor = '#222222'}
@@ -134,6 +141,80 @@ function Announcements() {
           </div>
         </div>
       )}
+
+      <style>{`
+        /* 💻 ขนาดในคอมพิวเตอร์ */
+        .announcement-modal-card {
+          background-color: #ffffff;
+          width: 100%;
+          max-width: 600px;
+          max-height: 85vh;
+          border-radius: 24px;
+          overflow: hidden;
+          box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+          text-align: left;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .announcement-modal-image {
+          width: 100%;
+          height: 240px;
+          background-color: #eaeaea;
+          flex-shrink: 0;
+        }
+
+        .announcement-modal-content {
+          padding: 30px;
+          font-family: 'Prompt', sans-serif;
+          overflow-y: auto;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .announcement-modal-title {
+          font-size: 20px;
+          font-weight: 600;
+          color: #222222;
+          margin: 0 0 15px 0;
+          line-height: 1.4;
+        }
+
+        .announcement-modal-excerpt {
+          font-size: 14.5px;
+          color: #555555;
+          line-height: 1.7;
+          font-weight: 300;
+          margin: 0 0 25px 0;
+          white-space: pre-line;
+        }
+
+        /* 📱 ปรับแต่งสำหรับมือถือ (<= 768px) */
+        @media (max-width: 768px) {
+          .announcement-modal-card {
+            max-height: 90vh; /* จำกัดความสูงของป๊อปอัพไม่ให้หลุดขอบจอ */
+            border-radius: 20px;
+          }
+
+          .announcement-modal-image {
+            height: 180px; /* ลดความสูงของภาพลงเพื่อให้ข้อความมีพื้นที่มากขึ้น */
+          }
+
+          .announcement-modal-content {
+            padding: 20px; /* ลด Padding ให้พอดีจอมือถือ */
+          }
+
+          .announcement-modal-title {
+            font-size: 17px;
+            margin-bottom: 10px;
+          }
+
+          .announcement-modal-excerpt {
+            font-size: 13.5px;
+            margin-bottom: 20px;
+          }
+        }
+      `}</style>
 
     </div>
   )

@@ -11,12 +11,12 @@ function HomeCard(){
         <div style={{width: '100%', padding: '30px 0 40px 0', backgroundColor: '#ffffff' }}>
             <Header2 title='ทำไมต้องเลือกเรา' description='สิ่งอำนวยความสะดวกและทำเลทองที่พร้อมตอบโจทย์ทุกการอยู่อาศัย'/>
 
-            <div style={{display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: '10px'}}>
+            <div className="home-card-grid">
                 {/* card 1 */}
                 <HomeCardFeature
                     title='ใกล้รถไฟฟ้าสายสีชมพู'
                     image={btsPink}
-                    description='ห่างจากสถานีรามอินทรากม. 4 เพียง 750 เมตร'
+                    description='ห่างจากสถานีรามอินทรา กม. 4 เพียง 750 เมตร'
                 />
                 <HomeCardFeature
                     title='ความปลอดภัยระดับมาตรฐาน'
@@ -34,6 +34,23 @@ function HomeCard(){
                     description='ใกล้ร้านสะดวกซื้อ หาของกินง่ายตลอด 24 ชั่วโมง'
                 />
             </div>
+
+            <style>{`
+                /* 💻 ขนาดในคอมพิวเตอร์ (ค่าเดิมของคุณเป๊ะๆ) */
+                .home-card-grid {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 10px;
+                }
+
+                /* 📱 ปรับแต่งเฉพาะตอนเปิดบนมือถือ/หน้าจอแคบ (<= 768px) */
+                @media (max-width: 768px) {
+                    .home-card-grid {
+                        grid-template-columns: repeat(1, 1fr);
+                        padding: 0 16px;
+                    }
+                }
+            `}</style>
         </div>
     )
 }
