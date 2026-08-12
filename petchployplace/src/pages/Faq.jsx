@@ -98,7 +98,7 @@ function Faq() {
       <Header2 
         category="FREQUENTLY ASKED QUESTIONS" 
         title="คำถามที่พบบ่อย" 
-        description="รวมข้อสงสัยเกี่ยวกับการเข้าพัก กฎระเบียบ และการบริการภายในโครงการ" 
+        description="รวมข้อสงสัยเกี่ยวกับการเข้าพัก กฎระเบียบ และการบริการภายใน" 
       />
 
       <div style={{ maxWidth: '800px', margin: '30px auto 0 auto', padding: '0 20px', boxSizing: 'border-box' }}>
