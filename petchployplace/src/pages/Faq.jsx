@@ -97,7 +97,7 @@ function Faq() {
     <div style={{ width: '100%', minHeight: '100vh', paddingBottom: '50px', backgroundColor: '#ffffff', fontFamily: 'Prompt, sans-serif' }}>
       <Header2 
         category="FREQUENTLY ASKED QUESTIONS" 
-        title="คำถามที่พบบ่อย (FAQ)" 
+        title="คำถามที่พบบ่อย" 
         description="รวมข้อสงสัยเกี่ยวกับการเข้าพัก กฎระเบียบ และการบริการภายในโครงการ" 
       />
 

@@ -9,7 +9,7 @@ import camera from '../assets/camera.jpg'
 function HomeCard(){
     return(
         <div style={{width: '100%', padding: '30px 0 40px 0', backgroundColor: '#ffffff' }}>
-            <Header2 title='ทำไมต้องเลือกเรา' description='สิ่งอำนวยความสะดวกและทำเลทองที่พร้อมตอบโจทย์ทุกการอยู่อาศัย'/>
+            <Header2 title='ทำไมต้องเลือกเรา' description='สิ่งอำนวยความสะดวกและทำเลทอง ตอบโจทย์ทุกการอยู่อาศัย'/>
 
             <div className="home-card-grid">
                 {/* card 1 */}
