@@ -5,6 +5,7 @@ import RoomFacility from '../components/RoomFacility'
 import Header2 from '../components/Header2'
 
 import roomImg from '../assets/room.jpg'
+import roomShop from '../assets/roomShop.jpg'
 import roomTypeA from '../assets/roomTypeA.jpg'
 import roomTypeB from '../assets/roomTypeB.jpg'
 import roomTypeC from '../assets/roomTypeC.jpg'
@@ -57,6 +58,7 @@ function Rooms() {
   const shopTypes = [
     {
       title: "พื้นที่ร้านค้าใต้หอพัก",
+      image: roomShop,
       price: "6,500",
       description: "ทำเลทองชั้นล่างสุดของอาคาร เหมาะสำหรับประกอบธุรกิจหลากหลายประเภท เช่น ร้านสะดวกซื้อ ร้านกาแฟ หรือร้านเสริมสวย เข้าถึงกลุ่มลูกค้าที่เป็นผู้พักอาศัยและบุคคลภายนอกได้ง่าย",
       highlights: ["ทำเลดี ติดถนนหน้าอะพาร์ตเมนต์ เดินทางสะดวก", "ระบบน้ำ-ไฟพร้อมใช้งาน", "ที่จอดรถรองรับลูกค้าหน้าร้าน"]
@@ -210,10 +212,10 @@ function Rooms() {
                 <div 
                   className="shop-card-image"
                   style={{ flex: '1 1 400px', height: '340px', backgroundColor: '#eaeaea', overflow: 'hidden', position: 'relative', cursor: 'pointer' }}
-                  onClick={() => openImageModal(roomImg)}
+                  onClick={() => openImageModal(shop.image)} // 👈 เรียกใช้ shop.image สำหรับเปิดซูม
                 >
                   <img 
-                    src={roomImg} 
+                    src={shop.image} // 👈 ดึงรูปมาจาก shop.image
                     alt={shop.title} 
                     style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.4s ease' }} 
                     onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.06)'}
