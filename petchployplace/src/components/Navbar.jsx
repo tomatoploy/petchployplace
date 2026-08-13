@@ -18,7 +18,7 @@ function Navbar({ currentPage, setCurrentPage }) {
 
   const menuItems = [
     { id: 'home', label: 'หน้าหลัก' },
-    { id: 'announcement', label: 'ข่าวสาร' },
+    // { id: 'announcement', label: 'ข่าวสาร' },
     { id: 'rooms', label: 'พื้นที่ให้เช่า' },
     { id: 'more', label: 'เกี่ยวกับเรา' },
     { id: 'faq', label: 'ถามตอบ' },

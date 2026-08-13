@@ -92,7 +92,7 @@ function MoreMap() {
         <div className="category-scroll-container">
           {[
             { key: 'all', label: 'ทั้งหมด' },
-            { key: 'shopping', label: '🛍️ ช้อปปิ้ง & ร้านสะดวกซื้อ' },
+            { key: 'shopping', label: '🛍️ ห้าง | ร้านสะดวกซื้อ' },
             // { key: 'dining', label: '🍽️ ร้านอาหาร & คาเฟ่' },
             { key: 'market', label: '🧺 ตลาด' },
             { key: 'healthcare', label: '🏥 สถานพยาบาล' },

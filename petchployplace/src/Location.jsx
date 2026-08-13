@@ -34,6 +34,7 @@ import moreMap504 from './assets/moreMap/moreMap504.png'
 import moreMap505 from './assets/moreMap/moreMap505.png'
 import moreMap506 from './assets/moreMap/moreMap506.png'
 import moreMap507 from './assets/moreMap/moreMap507.png'
+import moreMap508 from './assets/moreMap/moreMap508.png'
 import moreMap601 from './assets/moreMap/moreMap601.png'
 import moreMap602 from './assets/moreMap/moreMap602.png'
 import moreMap603 from './assets/moreMap/moreMap603.png'
@@ -386,57 +387,68 @@ export const locations = [
     },
     {
       id: 503,
+      name: "โรงเรียนบ้านคลองบัว (เอี่ยมแสงโรจน์)",
+      category: "education",
+      categoryLabel: "โรงเรียน",
+      coords: [13.864532303101987, 100.64055373706847],
+      distance: "1.5 กิโลเมตร | 🚗 3 นาที",
+      desc: "โรงเรียนรัฐบาลขนาดใหญ่ เปิดสอนตั้งแต่ระดับชั้นอนุบาลถึงประถมศึกษาปีที่ 6",
+      image: moreMap503,
+      cr: "Google Street View"
+    },
+    {
+      id: 504,
       name: "โรงเรียนรัตนโกสินทร์สมโภชบางเขน",
       category: "education",
       categoryLabel: "โรงเรียน",
       coords: [13.870936810024952, 100.64446756696417],
       distance: "2.7 กิโลเมตร | 🚗 7 นาที",
       desc: "โรงเรียนรัฐบาลระดับมัธยมศึกษาขนาดใหญ่ มีแผนการเรียนหลากหลายห้องเรียนและห้องเรียนพิเศษตามความสามารถของนักเรียน",
-      image: moreMap503,
+      image: moreMap504,
       cr: "Google Street View"
     },
     {
-      id: 504,
+      id: 505,
       name: "โรงเรียนลอยสายอนุสรณ์",
       category: "education",
       categoryLabel: "โรงเรียน",
       coords: [13.841602316659145, 100.63299905128841],
       distance: "4.6 กิโลเมตร | 🚗 17 นาที",
       desc: "โรงเรียนระดับประถมศึกษาและมัธยมศึกษาตอนต้น จัดการเรียนการสอนโดยเน้นวิถีพุทธ ควบคู่เทคโนโลยีและความพอเพียง มีกิจกรรมพัฒนาผู้เรียน",
-      image: moreMap504,
+      image: moreMap505,
       cr: "P_Yuan Ruangsak"
     },
     {
-      id: 505,
+      id: 506,
       name: "มหาวิทยาลัยเกริก",
       category: "education",
       categoryLabel: "มหาวิทยาลัย",
       coords: [13.8735073352617, 100.59961448045735],
       distance: "5.8 กิโลเมตร | 🚗 15 นาที",
       desc: "มหาวิทยาลัยที่มีชื่อเสียงด้านหลักสูตรนานาชาติ โดยเฉพาะหลักสูตรภาษาจีน",
-      image: moreMap505,
+      image: moreMap506,
       cr: "Thanpitcha Atiwanwong"
     },
     {
-      id: 506,
+      id: 507,
       name: "มหาวิทยาลัยราชภัฏพระนคร",
       category: "education",
       categoryLabel: "มหาวิทยาลัย",
       coords: [13.878576342710003, 100.59123006696429],
       distance: "6 กิโลเมตร | 🚗 15 นาที",
       desc: "สถาบันอุดมศึกษาของรัฐ มุ่งมั่นผลิตบัณฑิตและพัฒนาท้องถิ่น เปิดสอนตั้งแต่ระดับปริญญาตรี โท และเอก",
-      image: moreMap506,
+      image: moreMap507,
       cr: "HAPPY WAY"
     },
     {
-      id: 507,
+      id: 508,
       name: "โรงเรียนไทยนิยมสงเคราะห์",
       category: "education",
       categoryLabel: "โรงเรียน",
       coords: [13.878214859029997, 100.59879912278252],
       distance: "6.8 กิโลเมตร | 🚗 17 นาที",
       desc: "โรงเรียนชั้นอนุบาลถึงชั้นมัธยมศึกษาตอนต้น นำร่องด้านเทคโนโลยีและไอที มีการส่งเสริมกิจกรรมพัฒนาผู้เรียน",
-      image: moreMap507,
+      image: moreMap508,
       cr: "Rathakarn Khuruthiti"
     },
     //
