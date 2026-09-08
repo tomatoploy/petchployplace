@@ -33,8 +33,8 @@ function Contact() {
           <div style={columnStyle}>
             <h3 style={titleStyle}>โทรศัพท์</h3>
             <p style={{ ...detailStyle, marginBottom: '20px' }}>
-              02-551-4211 ต่อ 0<br />
-              087-712-9327
+              087-712-9327<br />
+              099-396-1919
             </p>
             <p style={detailStyle}>
               petchployplace@gmail.com

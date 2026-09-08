@@ -1,16 +1,58 @@
-# React + Vite
+# เพชร พลอย เพลส
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+เว็บไซต์ประชาสัมพันธ์และให้ข้อมูลสำหรับอะพาร์ตเมนต์ "เพชร พลอย เพลส"(ซ.รามอินทรา 39) พัฒนาด้วย React และ Vite เพื่อความรวดเร็วในการแสดงผล รองรับการแสดงผลทุกขนาดหน้าจอ (Responsive Design) และมอบประสบการณ์การใช้งานที่ดีให้แก่ผู้เช่าและผู้ที่สนใจ
 
-Currently, two official plugins are available:
+**เว็บไซต์:** [https://tomatoploy.github.io/petchployplace/](https://tomatoploy.github.io/petchployplace/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+# Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **หน้าหลัก:** ข้อมูลภาพรวมและจุดเด่นของโครงการ
+- **ข่าวสารและประกาศ:** แจ้งเตือนอัปเดตข้อมูล ข่าวสาร และกฎระเบียบ พร้อมระบบหน้าต่าง Pop-up อ่านง่าย และ Empty State กรณีไม่มีประกาศ
+- **พื้นที่เช่า:** รายละเอียดห้องพักประเภทต่าง ๆ พื้นที่ร้านค้า พร้อมสิ่งอำนวยความสะดวกในอะพาร์ตเมนต์
+- **เกี่ยวกับเรา:** รวมข้อมูลสถานที่ใกล้เคียง ขนส่งสาธารณะ และการเดินทาง
+- **คำถามที่พบบ่อย:** รวบรวมข้อสงสัย เงื่อนไขการเข้าพัก และกฎระเบียบของอาคารในรูปแบบ Accordion
+- **ติดต่อเรา:** ช่องทางการติดต่อ แผนที่ และข้อมูลการเดินทาง
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Tech Stack
+
+- **Frontend Framework:** React.js
+- **Build Tool:** Vite
+- **Styling:** CSS & Inline Styles
+- **Deployment:** GitHub Pages (package `gh-pages`)
+
+---
+
+# Local Setup
+
+หากต้องการนำโปรเจกต์มาพัฒนาต่อในเครื่องคอมพิวเตอร์ของคุณ ให้ทำตามขั้นตอนดังนี้
+
+1. โคลนโปรเจกต์
+   ```bash
+   git clone [https://github.com/tomatoploy/petchployplace.git](https://github.com/tomatoploy/petchployplace.git)
+
+2. เข้าไปในโฟลเดอร์โปรเจกต์
+   cd petchployplace
+
+3. ติดตั้งแพ็กเกจที่จำเป็น
+   npm install
+
+4. รันเซิร์ฟเวอร์จำลอง
+   npm run dev
+
+# Deployment Guide
+
+เนื่องจากโปรเจกต์นี้ฝากเว็บไซต์ไว้บน GitHub Pages เมื่อมีการแก้ไขโค้ดและต้องการอัปเดตหน้าเว็บจริง ให้ทำตามขั้นตอนดังนี้
+
+1. บันทึกโค้ดและเซฟไฟล์ทั้งหมดให้เรียบร้อย (Ctrl + S)
+
+2. push ลง github
+
+3. เปิด Terminal แล้วรันคำสั่ง
+   npm run build
+   npx gh-pages -d dist
+
+4. รอประมาณ 1-2 นาที แล้วไปที่หน้าเว็บไซต์จริง กดปุ่ม F5 หรือ Ctrl + Shift + R เพื่อล้างแคชและดูการเปลี่ยนแปลง
